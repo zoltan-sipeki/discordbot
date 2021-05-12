@@ -40,6 +40,10 @@ async function tournaments(msg) {
 }
 
 async function clan(msg, ...args) {
+    if (args.length === 0) {
+        return;
+    }
+    
     let limit = Number.parseInt(args[args.length - 1]);
     if (Number.isNaN(limit))
         limit = 5;
