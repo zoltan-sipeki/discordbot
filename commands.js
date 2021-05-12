@@ -41,6 +41,7 @@ async function tournaments(msg) {
 
 async function clan(msg, ...args) {
     if (args.length === 0) {
+        msg.channel.send("Missing clan name.")
         return;
     }
     
