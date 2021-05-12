@@ -32,7 +32,6 @@ async function tournaments(msg) {
             reply += `Registration time: ${new Date(s.registrationTime).toLocaleString()}\n`;
             reply += `Start time: ${new Date(s.startTime).toLocaleString()}\n`;
             reply += `Cancelled: ${s.cancelled}\n`;
-            
         }
     }
     
