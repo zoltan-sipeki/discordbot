@@ -56,7 +56,7 @@ async function clan(msg, ...args) {
         return;
     }
 
-    const search = args.join(" ");
+    const search = encodeURIComponent(args.join(" "));
     const url = `https://api.clashofclans.com/v1/clans?name=${search}&limit=${limit}`;
     const response = await fetch(url, {
         headers: {
