@@ -10,7 +10,7 @@ client.on("ready", () => {
     console.log("I am up and running.");
 });
 
-client.on("message", async (msg) => {
+client.on("message", (msg) => {
     const tokens = msg.content.split(" ");
     let [command, ...args] = tokens;
     if (command[0] !== "!") {
